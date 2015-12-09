@@ -2,7 +2,7 @@
 	<div class="col-md-10">
 		<% flash.each do |message_type, message| %>
 		<div class="alert alert-<%= message_type %>">
-			<a class="close" data-dismiss="alert">x</a>
+			<a class="close" data-dismiss="alert"><span>&times</span></a>
 			<%= message %>
 		</div>
 		<% end %>

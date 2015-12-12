@@ -1,7 +1,7 @@
 include ActionView::Helpers::DateHelper
 class RecipesController < ApplicationController
 	def index
-		@recipes = Recipe.paginate(page: params[:page], per_page: 2)
+		@recipes = Recipe.paginate(page: params[:page], per_page: 6)
 	end
 
 	def show

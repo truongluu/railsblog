@@ -7,8 +7,10 @@
 			<div class="nav_item">
 				<%= link_to "item 1", "", class: "btn btn-default btn-warning" %>
 			</div>
+			<% if logged_in? %>
 			<div class="nav_item">
 				<%= link_to "New Recipe", new_recipe_path, class: "btn btn-default btn-warning" %>
 			</div>
+			<% end %>
 		</div>
 	</header>
